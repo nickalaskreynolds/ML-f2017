@@ -1,0 +1,30 @@
+chatbot
+>creation of a chat bot based off of responses in pregenerated chat
+>(https://pypi.python.org/pypi/ChatterBot/0.4.3)
+
+Image Segmentation Dataset
+>Group image sets by objects, colors, contrasts,
+# object recognition (maybe more appropriate)
+
+handwritting recognition
+> able to discern words from image
+
+Kepler Image Planets
+> Use kepler data to find planets
+> https://keplerscience.arc.nasa.gov/data-products.html
+
+solar flares #########
+> use radio data and xray data to determine periods of solar activity and solar flares 
+
+Radio Source recognition
+> simulate data  and converge model to data
+> build sed from params
+> identify source type from sed (accretion, debris vs circumstellar etc)
+
+galaxy recognition
+> sdss data
+> identify if galaxy is spiral, elliptical, exotic, etc
+
+bayesian way alternative to clean ############
+> alternative clean algorithm
+> decent 

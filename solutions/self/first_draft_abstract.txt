@@ -1,0 +1,17 @@
+##########################################
+Astro: Machine Learning
+RESOLVE: Alternative Bayesian approach to CLEAN
+##########################################
+
+#!IMAGE     for images
+#!CITE      citation
+#!FOOT      footnote
+
+Radio interferometry, the method of interfering radio waves using antenna arrays spaning numerous baselines, is an extremely useful method of increasing resolution and sensitivity of observations. This allows you to effectively increase the aperture of the resulting telescope without constructing a continuous single antenna. However, the resulting data is non trivial to analyze. The resulting image, contructed from the intensity function is a fourier transformation of the convolution between your visibilities and your beam. This is computationally expensive, as your visibility function doesn't continuous span the fourier space(u,v). #!IMAGE include image of visibilities!# 
+
+The CLEAN method #!CITE when CLEAN made Hogbom 1974!# has been the de-facto algorithm in order to reduce radio interferometric data. While this method has been modified and advanced numerously, with new implementations, the main underlying assumption is that the image is composed of a combination of uncorrelated point sources. There have been new implementations in order to address these concern: reducing computation effort (clark and msclean) #!CITE clark 1980!#, improving mfs observations #!Sault Wieringa 1994 !#, and corrections to the algorithm #!CITE schwab 1984 !#. Yet, the underlying assumption that the underlying structure s composed of point/kernal sources remains. To boot, no known method has been devolped tii propagate measurement uncertainties into the final reconstructed image.
+
+RESOLVE was created to overcome this by fulfilling the two main objectives: it should be optimal for diffuse sources and reliably include uncertainty propagation/error estimation during image reconstruction. RESOLVE is a bayesian appreach to CLEAN. Being such, it has to compute the Fourier transform of the Intensity numerous time in order to propagate the error through reconstruction. This is computationally expensive and causes RESOLVE to take longer to compute that CLEAN #!FOOT clean is interactive, RESOLVE is autonomous so complete time analysis is difficult!#. However, the resulting image from RESOLVE boast variable resolution which is, at worst cases, comparable to the super uniform briggs weighting of CLEAN in terms of the quality of the image. #!IMAGE include image of CLEAN vs RESOLVE !#
+
+Overall, RESOLVE offers a new method of cleaning extended and diffuse points sources over the standard CLEAN algorithm while offering generally higher resolutions and sensitivities over the subsequent additional CLEAN methods. I have already implemented the CLEAN algorithm numerous time and understand the algorithm and its methods intimately, however the RESOLVE algorithm could offer a much better method of non-interactive reconstructions of radio interferometric data. 
+

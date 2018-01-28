@@ -1,0 +1,3 @@
+- 1: You rescaled the data which I'm not sure is necessary.  You use your eigenvectors right.  Also you calculate the straight up covariance matrix which I'm not certain is the right thing to do (didn't count off for it).  Your plot looks good.  Your discussion is wrong: your eigenvectors shouldn't be pointing purely in the directions you mention.  It would have helped if you printed them.
+- 2.A: You don't appear to plot the mean until part B.
+- 2.B: Those fractional variances are off, and so are your eigenvectors.  I recommend stop trying to do these cute things with multiple cores.
