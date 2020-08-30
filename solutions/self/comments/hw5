@@ -1,3 +1,0 @@
-- 2.B: Uniform priors need bounds.  What are they?  Remember the amplitudes are coupled in a way.
-- 2.C: I can *kinda* see what you're doing here.  First your answers are flipped because you followed my example in the office hour.  Your log posterior is from the lecture which is NOT at all what we're doing here.
-- 2.D: I don't see you performing marginalization 'above'.

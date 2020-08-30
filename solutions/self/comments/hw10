@@ -1,3 +1,0 @@
-- 1.A: You don't just fit Gaussians, you also fit a line with negative slope?  I didn't count off for this.
-- 1.B: We wanted the summed squared coefficients, coefficients, and error as explicit functions of alpha.  You only performed Ridge Regression once, which counts for something.
-- 2.A: You needed to weigh the points based on error in polyfit.  w = 1/yerr

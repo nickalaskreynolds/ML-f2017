@@ -1,2 +1,0 @@
-- 1.B: Missing total error.  I'm really surprised the training set was [near] perfectly predicted by the model.  I don't think that's possible here but I don't see an error in your code, lol.
-- 2: Here it makes sense for your training data to match the model perfectly.  Where is the total error?
